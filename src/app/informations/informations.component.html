@@ -1,12 +1,18 @@
 <mat-divider></mat-divider>
 <div>
-  <button mat-raised-button color="primary" (click)="getMonthNow()">Obter mês atual</button>
-  <button mat-raised-button color="accent" (click)="getYearNow()">Obter ano atual</button>
-  <button mat-raised-button color="warn" (click)="getDayNow()">Obter dia atual</button>
+  <button mat-raised-button color="primary" (click)="getMonthNow()">
+    Obter mês atual
+  </button>
+  <button mat-raised-button color="accent" (click)="getYearNow()">
+    Obter ano atual
+  </button>
+  <button mat-raised-button color="warn" (click)="getDayNow()">
+    Obter dia atual
+  </button>
 </div>
 
 <div>
-  {{ (informations$ | async).year }}
-  {{ (informations$ | async).month }}
-  {{ (informations$ | async).day }}
+  <p>Ano atual {{ (informations$ | async).year }}</p>
+  <p>Mês atual {{ (informations$ | async).month }}</p>
+  <p>Dia atual {{ (informations$ | async).day }}</p>
 </div>

@@ -1,11 +1,11 @@
-import { useCount } from './../store/index';
-import { allActions } from './../store/Counter/counter-actions';
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs'
+import { Observable } from 'rxjs';
 import { AppState } from '../app.state';
+import { allActions } from './../store/Counter/counter-actions';
+import { useCount } from './../store/index';
 
-const { increment, decrement, reset, whoIsName }  = allActions
+const { increment, decrement, reset, whoIsName } = allActions;
 
 @Component({
   selector: 'app-my-counter',
@@ -16,20 +16,20 @@ export class MyCounterComponent {
   count$: Observable<number>
 
 
-  constructor(private store: Store<AppState>){
-    this.count$ = store.select(useCount)
+  constructor(private store: Store<AppState>) {
+    this.count$ = store.select(useCount);
   }
 
-  increment(){
-    this.store.dispatch(increment())
+  increment(): void {
+    this.store.dispatch(increment());
   }
-  decrement(){
-    this.store.dispatch(decrement())
+  decrement(): void {
+    this.store.dispatch(decrement());
   }
-  reset(){
-    this.store.dispatch(reset())
+  reset(): void {
+    this.store.dispatch(reset());
   }
-  name(){
-    this.store.dispatch(whoIsName({ name: 'Felipe'}))
+  name(): void {
+    this.store.dispatch(whoIsName({ name: 'Felipe' }));
   }
 }
