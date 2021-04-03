@@ -8,22 +8,6 @@
 
 <h1 align="center">Ngrx Example</h1>
 
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/flubyGit/ngrx-example?color=56BEB8">
-
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/flubyGit/ngrx-example?color=56BEB8">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/flubyGit/ngrx-example?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/flubyGit/ngrx-example?color=56BEB8">
-
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/ngrx-example?color=56BEB8" /> -->
-
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/ngrx-example?color=56BEB8" /> -->
-
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/ngrx-example?color=56BEB8" /> -->
-</p>
-
 <!-- Status -->
 
 <!-- <h4 align="center"> 
@@ -39,14 +23,14 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+  <a href="https://github.com/flubyGit target="_blank">Author</a>
 </p>
 
 <br>
 
 ## :dart: About ##
 
-Describe your project
+Applying tests with NgRx Redux Angular with Store, Schematics, Effects, Entity and more
 
 ## :sparkles: Features ##
 
@@ -64,7 +48,7 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Angular CLI](https://cli.angular.io/) installed.
 
 ## :checkered_flag: Starting ##
 
@@ -81,7 +65,7 @@ $ yarn
 # Run the project
 $ yarn start
 
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize in the <http://localhost:4200>
 ```
 
 ## :memo: License ##
@@ -89,7 +73,7 @@ $ yarn start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/flubyGit" target="_blank">Felipe André</a>
 
 &#xa0;
 
