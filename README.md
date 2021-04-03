@@ -17,6 +17,9 @@
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/flubyGit target="_blank">Author</a>
 </p>
+                                                      
+![Screenshot from 2021-04-03 18-27-55](https://user-images.githubusercontent.com/49297012/113492264-a779df80-94ac-11eb-87c0-46d43b8c4f48.png)
+![Screenshot from 2021-04-03 18-28-25](https://user-images.githubusercontent.com/49297012/113492265-a943a300-94ac-11eb-8e88-eec7ad356d7b.png)
 
 <br>
 
@@ -26,9 +29,8 @@ Applying tests with NgRx Redux Angular with Store, Schematics, Effects, Entity a
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Devtools;\
+:heavy_check_mark: Store/Reducers/Actions/Selectors
 
 ## :rocket: Technologies ##
 
