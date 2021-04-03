@@ -1,11 +1,3 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Ngrx Example" />
-
-  &#xa0;
-
-  <!-- <a href="https://ngrxexample.netlify.app">Demo</a> -->
-</div>
-
 <h1 align="center">Ngrx Example</h1>
 
 <!-- Status -->
