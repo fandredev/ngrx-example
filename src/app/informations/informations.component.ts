@@ -1,3 +1,4 @@
+import { TypeButtons } from './../app.model';
 import { useInfo } from './../store/index';
 import { InformationsProps } from './../store/Informations/informations-model';
 import { Observable } from 'rxjs';
@@ -16,7 +17,7 @@ const { getYearNow, getMonthNow, getDayNow } = allActionsInfo
 })
 export class InformationsComponent  {
   informations$: Observable<InformationsProps>
-
+  buttons: TypeButtons
 
   constructor(private store: Store<AppState>){
     this.informations$ = store.pipe(select(useInfo))

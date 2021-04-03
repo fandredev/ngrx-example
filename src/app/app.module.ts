@@ -11,7 +11,10 @@ import { InformationsComponent } from './informations/informations.component'
 import { informationsReducer } from './store/Informations/informations-reducer';
 
 
-import { StoreDevtoolsModule } from '@ngrx/store-devtools'
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +24,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatButtonModule,
+    MatDividerModule,
     StoreModule.forRoot({
       count: counterReducer,
       info: informationsReducer
@@ -28,7 +33,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools'
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production
-    })
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
