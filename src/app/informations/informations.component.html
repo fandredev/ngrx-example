@@ -1,1 +1,12 @@
-<p>Meu nome é {{ informations | async }}</p>
+<hr>
+<div>
+  <button (click)="getMonthNow()">Obter mês atual</button>
+  <button (click)="getYearNow()">Obter ano atual</button>
+  <button (click)="getDayNow()">Obter dia atual</button>
+</div>
+
+<div>
+  {{ (informations$ | async).year }}
+  {{ (informations$ | async).month }}
+  {{ (informations$ | async).day }}
+</div>

@@ -1,3 +1,4 @@
+import { useCount } from './../store/index';
 import { allActions } from './../store/Counter/counter-actions';
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
@@ -16,7 +17,7 @@ export class MyCounterComponent {
 
 
   constructor(private store: Store<AppState>){
-    this.count$ = store.select('count')
+    this.count$ = store.select(useCount)
   }
 
   increment(){
