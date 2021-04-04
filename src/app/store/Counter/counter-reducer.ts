@@ -1,15 +1,15 @@
-import { ActionCreator, createReducer, on } from '@ngrx/store'
-import { allActions } from './counter-actions'
+import { ActionCreator, createReducer, on } from '@ngrx/store';
+import { allActions } from './counter-actions';
 
-export const INITIAL_STATE: number = 0
+export const INITIAL_STATE = 0;
 
 
 const _counterReducer = createReducer(INITIAL_STATE,
-  on(allActions.increment, state => state + 1),
-  on(allActions.decrement, state => state - 1),
-  on(allActions.reset, state => state = 0),
-)
+  on(allActions.increment, state => ++state),
+  on(allActions.decrement, state => --state),
+  on(allActions.reset, () => 0),
+);
 
-export function counterReducer(state: number , action: ActionCreator) {
-  return _counterReducer(state, action)
+export function counterReducer(state: number, action: ActionCreator): number {
+  return _counterReducer(state, action);
 }

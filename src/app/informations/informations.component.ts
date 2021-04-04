@@ -4,12 +4,11 @@ import { Observable } from 'rxjs';
 import { AppState } from '../app.state';
 import { allActionsInfo } from '../store/Informations/infromations-actions';
 import { TypeButtons } from './../app.model';
-import { useInfo } from './../store/index';
 import { InformationsProps } from './../store/Informations/informations-model';
-
-
+import { useInfo } from './../store/selectors';
 
 const { getYearNow, getMonthNow, getDayNow } = allActionsInfo;
+
 @Component({
   selector: 'app-informations',
   templateUrl: './informations.component.html',

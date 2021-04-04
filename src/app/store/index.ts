@@ -1,17 +1,20 @@
-import { InformationsProps } from './Informations/informations-model';
-import { createSelector } from '@ngrx/store'
-import { AppState } from '../app.state'
+import { ActionReducer, ActionReducerMap, MetaReducer } from '@ngrx/store';
+import { localStorageSync } from 'ngrx-store-localstorage';
+import { AppState } from '../app.state';
+import { counterReducer } from './Counter/counter-reducer';
+import { geoReducer } from './Geolocation/geo-reducer';
+import { informationsReducer } from './Informations/informations-reducer';
 
+export const appReducers: ActionReducerMap<AppState> = {
+  count: counterReducer,
+  info: informationsReducer,
+  geo: geoReducer
+};
 
-const selectCount = (state: AppState) => state.count
-const selectInfo = (state: AppState) => state.info
-
-export const useCount = createSelector(
-  selectCount,
-  (state: number) => state
-)
-
-export const useInfo = createSelector(
-  selectInfo,
-  (state: InformationsProps) => state
-)
+function localStorageSyncReducer(reducers: ActionReducer<any>): ActionReducer<any> {
+  return localStorageSync({
+    keys: ['geo'],
+    rehydrate: true
+  })(reducers)
+}
+export const metaReducers: Array<MetaReducer> = [localStorageSyncReducer]

@@ -1,3 +1,7 @@
+<p>Geolocation Latitude: {{ (geolocation$ | async).latitude }}</p>
+<p>Geolocation Longitude: {{ (geolocation$ | async).longitude }}</p>
+
+<mat-divider></mat-divider>
 <button mat-raised-button color="primary" (click)="increment()">
   Increment
 </button>

@@ -10,10 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InformationsComponent } from './informations/informations.component';
 import { MyCounterComponent } from './my-counter/my-counter.component';
-import { counterReducer } from './store/Counter/counter-reducer';
-import { informationsReducer } from './store/Informations/informations-reducer';
-
-
+import { appReducers, metaReducers } from './store';
 
 @NgModule({
   declarations: [
@@ -26,10 +23,7 @@ import { informationsReducer } from './store/Informations/informations-reducer';
     AppRoutingModule,
     MatButtonModule,
     MatDividerModule,
-    StoreModule.forRoot({
-      count: counterReducer,
-      info: informationsReducer
-    }),
+    StoreModule.forRoot(appReducers, { metaReducers }),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production
